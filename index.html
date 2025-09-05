@@ -39,17 +39,9 @@
 
     /* ====== Desktop : style “comme avant” (centré, max-width, arrondis) ====== */
     @media (min-width: 900px){
-      body{
-        display:block;min-height:auto; /* on enlève le plein écran */
-        background:linear-gradient(180deg,#0d0d10,#111118)
-      }
-      .wrap{
-        max-width:900px;margin:48px auto;padding:28px;height:auto;display:block
-      }
-      .card{
-        border-radius:18px;padding:24px;
-        display:block; /* plus de stretch vertical */
-      }
+      body{display:block;min-height:auto;background:linear-gradient(180deg,#0d0d10,#111118)}
+      .wrap{max-width:900px;margin:48px auto;padding:28px;height:auto;display:block}
+      .card{border-radius:18px;padding:24px;display:block}
       header img{width:56px;height:56px}
       h1{font-size:28px}
       .grid{grid-template-columns:1.3fr .7fr;margin-top:16px}
@@ -87,6 +79,8 @@
               <a class="btn" 
                  href="https://bscscan.com/token/0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99" 
                  target="_blank" rel="noopener">🔎 Voir sur BscScan</a>
+              <!-- 🆕 Bouton Whitepaper -->
+              <a class="btn" href="BaguetteCoin_Whitepaper.pdf" target="_blank" rel="noopener" download>📄 Whitepaper</a>
             </div>
 
             <p style="margin-top:12px"><small>Astuce : vérifiez toujours l’adresse du contrat avant d’acheter.</small></p>
