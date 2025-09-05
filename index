@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Baguette Coin ($BAGU) — La crypto la plus croustillante 🥖</title>
   <meta name="description" content="Baguette Coin ($BAGU) : meme coin français, supply fixe 67 000 000 (1 par Français). Projet fun et transparent.">
-  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="logo1.svg" type="image/svg+xml" />
   <style>
     :root{--bg:#0f0f12;--card:#15151b;--txt:#f6f6f9;--muted:#b9b9c6;--accent:#f7c873}
     *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
@@ -32,7 +32,7 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <img src="logo.svg" alt="BAGU logo" />
+        <img src="logo1.svg" alt="BAGU logo1" />
         <div>
           <h1>Baguette Coin <span class="tag">$BAGU</span></h1>
           <small>67 000 000 supply (1 par Français) · BNB Smart Chain</small>
@@ -92,3 +92,4 @@
   </script>
 </body>
 </html>
+
