@@ -7,45 +7,37 @@
   <meta name="description" content="Baguette Coin ($BAGU) : meme coin français, supply fixe 67 000 000 (1 par Français). Projet fun et transparent.">
   <link rel="icon" href="logo1.png" type="image/png" />
   <style>
-    :root{
-      --bg:#0f0f12; --card:#15151b; --txt:#f6f6f9;
-      --muted:#b9b9c6; --accent:#f7c873
-    }
-    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-    html,body{height:100%;margin:0}
-    /* ====== Mobile par défaut : plein écran ====== */
-    body{
-      display:flex;justify-content:center;align-items:center;min-height:100vh;
-      background:linear-gradient(180deg,#0d0d10,#111118);color:var(--txt)
-    }
-    .wrap{width:100%;height:100%;padding:12px;display:flex}
-    .card{
-      background:var(--card);border:1px solid #20202a;border-radius:0;
-      padding:20px;flex:1;display:flex;flex-direction:column;justify-content:space-between
-    }
-    header{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
-    header img{width:48px;height:48px}
-    h1{margin:0;font-size:22px;line-height:1.2}
-    .tag{display:inline-block;background:#1d1d26;border:1px solid #2a2a36;border-radius:999px;padding:4px 10px;margin-top:4px;color:var(--muted);font-size:12px}
-    p{color:var(--muted);line-height:1.5;margin:10px 0}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:10px}
-    .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-    .btn{background:#1f1f28;border:1px solid #2a2a36;border-radius:10px;padding:10px 14px;color:var(--txt);text-decoration:none;display:inline-flex;gap:6px;align-items:center;font-weight:600;font-size:14px}
-    .btn:hover{border-color:#3a3a4a}
-    .btn.primary{background:var(--accent);color:#1a1205;border:none}
-    code.addr{background:#111118;border:1px solid #2a2a36;border-radius:8px;padding:8px 10px;display:inline-flex;gap:6px;align-items:center;font-family:ui-monospace,Menlo,monospace;font-size:13px;word-break:break-all}
-    small{color:var(--muted)}
-    footer{opacity:.8;margin-top:18px;font-size:12px;text-align:center}
+    :root{ --bg:#0f0f12; --card:#15151b; --txt:#f6f6f9; --muted:#b9b9c6; --accent:#f7c873 }
+    *{ box-sizing:border-box; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial }
+    html,body{ height:100%; margin:0 }
+    /* Mobile: plein écran */
+    body{ display:flex; justify-content:center; align-items:center; min-height:100vh; background:linear-gradient(180deg,#0d0d10,#111118); color:var(--txt) }
+    .wrap{ width:100%; height:100%; padding:12px; display:flex }
+    .card{ background:var(--card); border:1px solid #20202a; border-radius:0; padding:20px; flex:1; display:flex; flex-direction:column; gap:18px }
+    header{ display:flex; gap:12px; align-items:center; flex-wrap:wrap }
+    header img{ width:48px; height:48px }
+    h1{ margin:0; font-size:22px; line-height:1.2 }
+    .tag{ display:inline-block; background:#1d1d26; border:1px solid #2a2a36; border-radius:999px; padding:4px 10px; margin-top:4px; color:var(--muted); font-size:12px }
+    nav{ display:flex; flex-wrap:wrap; gap:8px }
+    .btn{ background:#1f1f28; border:1px solid #2a2a36; border-radius:10px; padding:10px 14px; color:var(--txt); text-decoration:none; display:inline-flex; gap:6px; align-items:center; font-weight:600; font-size:14px }
+    .btn.primary{ background:var(--accent); color:#1a1205; border:none }
+    .btn:hover{ border-color:#3a3a4a }
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px }
+    p{ color:var(--muted); line-height:1.5; margin:0 }
+    .row{ display:flex; flex-wrap:wrap; gap:10px; align-items:center }
+    code.addr{ background:#111118; border:1px solid #2a2a36; border-radius:8px; padding:8px 10px; display:inline-flex; gap:6px; align-items:center; font-family:ui-monospace,Menlo,monospace; font-size:13px; word-break:break-all }
+    small{ color:var(--muted) }
+    footer{ opacity:.8; font-size:12px; text-align:center; margin-top:6px }
 
-    /* ====== Desktop : style “comme avant” (centré, max-width, arrondis) ====== */
+    /* Desktop: centré avec arrondis */
     @media (min-width: 900px){
-      body{display:block;min-height:auto;background:linear-gradient(180deg,#0d0d10,#111118)}
-      .wrap{max-width:900px;margin:48px auto;padding:28px;height:auto;display:block}
-      .card{border-radius:18px;padding:24px;display:block}
-      header img{width:56px;height:56px}
-      h1{font-size:28px}
-      .grid{grid-template-columns:1.3fr .7fr;margin-top:16px}
-      footer{margin-top:28px;font-size:13px}
+      body{ display:block; min-height:auto }
+      .wrap{ max-width:900px; margin:48px auto; padding:28px; height:auto; display:block }
+      .card{ border-radius:18px; padding:24px }
+      header img{ width:56px; height:56px }
+      h1{ font-size:28px }
+      .grid{ grid-template-columns:1.3fr .7fr }
+      footer{ margin-top:10px; font-size:13px }
     }
   </style>
 </head>
@@ -60,9 +52,17 @@
         </div>
       </header>
 
+      <!-- NAV -->
+      <nav>
+        <a class="btn primary" href="https://pancakeswap.finance/swap?outputCurrency=0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99&chain=bsc" target="_blank" rel="noopener">🚀 Buy on PancakeSwap</a>
+        <a class="btn" href="tokenomics.html">📊 Tokenomics & Roadmap</a>
+        <a class="btn" href="BaguetteCoin_Whitepaper_v3.pdf" target="_blank" rel="noopener" download>📄 Whitepaper</a>
+        <a class="btn" href="https://bscscan.com/token/0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99" target="_blank" rel="noopener">🔎 BscScan</a>
+        <a class="btn" href="https://x.com/BaguetteCoin_Of" target="_blank" rel="noopener">🐦 Twitter/X</a>
+      </nav>
+
       <main>
-        <p>🥖 Baguette Coin est un <strong>meme coin français</strong> au supply fixe de <strong>67&nbsp;millions</strong>. 
-        Projet fun, <strong>transparent</strong> (contrat vérifié) et 100% croustillant.</p>
+        <p>🥖 Baguette Coin est un <strong>meme coin français</strong> au supply fixe de <strong>67&nbsp;millions</strong>. Projet fun, <strong>transparent</strong> (contrat vérifié) et 100% croustillant.</p>
 
         <div class="grid">
           <div>
@@ -71,27 +71,12 @@
               <code id="addr" class="addr">0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99</code>
               <button class="btn" id="copy">Copier</button>
             </div>
-
-            <div class="row" style="margin-top:12px">
-              <a class="btn primary" 
-                 href="https://pancakeswap.finance/swap?outputCurrency=0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99&chain=bsc"
-                 target="_blank" rel="noopener">🚀 Buy on PancakeSwap</a>
-              <a class="btn" 
-                 href="https://bscscan.com/token/0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99" 
-                 target="_blank" rel="noopener">🔎 Voir sur BscScan</a>
-              <!-- 🆕 Bouton Whitepaper -->
-              <a class="btn" href="BaguetteCoin_Whitepaper.pdf" target="_blank" rel="noopener" download>📄 Whitepaper</a>
-            </div>
-
-            <p style="margin-top:12px"><small>Astuce : vérifiez toujours l’adresse du contrat avant d’acheter.</small></p>
+            <p><small>Astuce : vérifiez toujours l’adresse du contrat avant d’acheter.</small></p>
           </div>
 
           <div>
-            <h3>Preuves & Liens</h3>
-            <div class="row">
-              <a class="btn" href="#" target="_blank" rel="noopener">🔒 LP Lock (à venir)</a>
-              <a class="btn" href="https://x.com/BaguetteCoin_Of" target="_blank" rel="noopener">🐦 Twitter/X</a>
-            </div>
+            <h3>À propos</h3>
+            <p>Supply fixe (pas de mint), contrat vérifié, liquidité prévue sur PancakeSwap. Notre objectif : une communauté 🥖 forte et fun, avec communication transparente et jalons simples.</p>
           </div>
         </div>
       </main>
@@ -113,5 +98,3 @@
   </script>
 </body>
 </html>
-
-
