@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>$BAGU — Tokenomics & Roadmap</title>
+  <meta name="description" content="Tokenomics et Roadmap de Baguette Coin ($BAGU).">
+  <link rel="icon" href="logo1.png" type="image/png" />
+  <style>
+    :root{ --bg:#0f0f12; --card:#15151b; --txt:#f6f6f9; --muted:#b9b9c6; --accent:#f7c873 }
+    *{ box-sizing:border-box; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial }
+    html,body{ height:100%; margin:0 }
+    /* Mobile plein écran */
+    body{ display:flex; justify-content:center; align-items:center; min-height:100vh; background:linear-gradient(180deg,#0d0d10,#111118); color:var(--txt) }
+    .wrap{ width:100%; height:100%; padding:12px; display:flex }
+    .card{ background:var(--card); border:1px solid #20202a; border-radius:0; padding:20px; flex:1; display:flex; flex-direction:column; gap:18px }
+    header{ display:flex; gap:12px; align-items:center; flex-wrap:wrap }
+    header img{ width:40px; height:40px }
+    h1{ margin:0; font-size:20px }
+    .btn{ background:#1f1f28; border:1px solid #2a2a36; border-radius:10px; padding:10px 14px; color:var(--txt); text-decoration:none; display:inline-flex; gap:6px; align-items:center; font-weight:600; font-size:14px }
+    .btn.primary{ background:var(--accent); color:#1a1205; border:none }
+    .btn:hover{ border-color:#3a3a4a }
+    section{ background:#13131a; border:1px solid #20202a; border-radius:12px; padding:14px }
+    h2{ margin:0 0 6px 0; font-size:18px }
+    p,li,small{ color:var(--muted); line-height:1.6 }
+    ul{ margin:8px 0 0 18px }
+    code.addr{ background:#111118; border:1px solid #2a2a36; border-radius:8px; padding:8px 10px; display:inline-block; font-family:ui-monospace,Menlo,monospace; font-size:13px; word-break:break-all }
+    .grid{ display:grid; grid-template-columns:1fr; gap:14px }
+    @media(min-width:900px){
+      body{ display:block }
+      .wrap{ max-width:900px; margin:48px auto; padding:28px; height:auto; display:block }
+      .card{ border-radius:18px; padding:24px }
+      header img{ width:56px; height:56px }
+      h1{ font-size:28px }
+      .grid{ grid-template-columns:1fr 1fr }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <img src="logo1.png" alt="$BAGU" />
+        <div style="flex:1">
+          <h1>Tokenomics & Roadmap</h1>
+          <small>Baguette Coin ($BAGU) — BNB Smart Chain</small>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn" href="./">← Accueil</a>
+          <a class="btn" href="BaguetteCoin_Whitepaper_v3.pdf" target="_blank" rel="noopener" download>📄 Whitepaper</a>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <h2>Tokenomics</h2>
+          <p><strong>Supply total :</strong> 67 000 000 BAGU (fixe, pas de mint) — Décimales : 18</p>
+          <p><strong>Contrat :</strong> <code class="addr">0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99</code></p>
+          <ul>
+            <li><strong>80%</strong> — Liquidity Pool PancakeSwap (lock partiel prévu)</li>
+            <li><strong>10%</strong> — Marketing & partenariats</li>
+            <li><strong>5%</strong> — Récompenses & airdrops</li>
+            <li><strong>5%</strong> — Réserve équipe (peut être lockée)</li>
+          </ul>
+          <p><small>Transparence : contrat vérifié, supply fixe, aucune fonction de mint après déploiement.</small></p>
+        </section>
+
+        <section>
+          <h2>Roadmap</h2>
+          <ul>
+            <li><strong>Q3 2025</strong> — Lancement officiel ($BAGU), site et whitepaper.</li>
+            <li><strong>Q4 2025</strong> — Listing PancakeSwap (BNB/BAGU) + lock partiel LP.</li>
+            <li><strong>Q1 2026</strong> — Développement communauté (Twitter/Telegram/Discord) & début marketing.</li>
+            <li><strong>Q2 2026</strong> — Demandes de listing CoinGecko / CoinMarketCap.</li>
+            <li><strong>Q3 2026</strong> — Marketing intensifié, partenariats & premières démarches CEX.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h2>Liens officiels</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <a class="btn primary" href="https://pancakeswap.finance/swap?outputCurrency=0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99&chain=bsc" target="_blank" rel="noopener">🚀 Buy on PancakeSwap</a>
+          <a class="btn" href="https://bscscan.com/token/0x6084AFB48996dfaB8CDB490C03db0d1269D5eE99" target="_blank" rel="noopener">🔎 BscScan</a>
+          <a class="btn" href="https://x.com/BaguetteCoin_Of" target="_blank" rel="noopener">🐦 Twitter/X</a>
+        </div>
+      </section>
+
+      <footer style="opacity:.8;text-align:center;font-size:12px">
+        © Baguette Coin — Ceci n’est pas un conseil financier. Meme coin expérimental.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
